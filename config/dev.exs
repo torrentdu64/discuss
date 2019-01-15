@@ -66,6 +66,11 @@ config :phoenix, :stacktrace_depth, 20
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
 
+config :ueberauth, Ueberauth.Strategy.Github.OAuth,
+  client_id: "8ab822c4ab3a2d604d00",
+  client_secret: "f50f9be9a3249dddb543cb115bdd26b513b559cd"
+
+
 # Configure your database
 config :discuss, Discuss.Repo,
   username: "torrent",
